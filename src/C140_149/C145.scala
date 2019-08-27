@@ -1,5 +1,6 @@
-import language.postfixOps
+
 import scala.collection.mutable
+import scala.language.postfixOps
 object C145 {
 
   // P1 code
