@@ -1,38 +1,27 @@
 object C151 {
   object P1 {
+    case class Elem(name:String, time:Int, fee:Int, city:String){
+      def inValid():Boolean = fee > 1000
+      def inValid(that:Elem):Boolean = {
+          this.name == that.name &&
+          Math.abs(this.time - that.time) <= 60 &&
+          this.city != that.city
+      }
+      def get():String = List(name, time.toString, fee.toString, city).mkString(",")
+    }
+    def trans (str:String):Elem = str.split(",").toList match {
+      case a :: b :: c :: d :: Nil => Elem(a, b.toInt, c.toInt, d)
+    }
+    def f(A: Array[Elem]): Array[Elem] = A filter {elem => elem.inValid || A.exists(x => x inValid elem)}
     def invalidTransactions(A: Array[String]): List[String] = {
-      def f(A: Array[(String, Int, Int, String)]): Array[(String, Int, Int, String)] = {
-        val valid = Array.fill(A.length)(true)
-        for {i <- A.indices} {
-          if (A(i)._3 > 1000) {
-            valid(i) = false
-          }
-          for {j <- i + 1 until A.length} {
-            if (A(i)._4 != A(j)._4 && A(j)._2 - A(i)._2 <= 60) {
-              valid(i) = false
-              valid(j) = false
-            }
-          }
-        }
-        A.indices.toArray filterNot valid map A
-      }
-      A.map { str => str.split(",").toList match {
-        case a :: b :: c :: d :: Nil => (a, b.toInt, c.toInt, d)
-      }
-      }
-        .sortBy { case (a, b, c, d) => b }
-        .groupBy { case (a, b, c, d) => a }.values.toList
-        .flatMap { x => f(x.toArray) }
-        .map { case (a, b, c, d) => a + "," + b + "," + c + "," + d }
+      f(A map trans).map(_.get()).toList
     }
   }
   object P2 {
     def numSmallerByFrequency(queries: Array[String], words: Array[String]): Array[Int] = {
-      def f(s: String): Int = {
-        s.sorted.toList match {
-          case Nil => 0
-          case h :: t => g(h, t, 1)
-        }
+      def f(s: String): Int = s.sorted.toList match {
+        case Nil => 0
+        case h :: t => g(h, t, 1)
       }
 
       def g(x: Char, l: List[Char], acc: Int): Int = l match {
@@ -44,44 +33,42 @@ object C151 {
     }
   }
   object P3 {
+    def ln2l(head: ListNode, acc: List[Int]): List[Int] = head match {
+      case null => acc.reverse
+      case _ => ln2l(head.next, head.x :: acc)
+    }
+
+    def l2ln(guard:ListNode)(l: List[Int], head: ListNode): ListNode = l match {
+      case Nil => guard.next
+      case h :: t =>
+        val next = new ListNode(h)
+        head match {
+          case null => guard.next = next
+          case _ => head.next = next
+        }
+        l2ln(guard)(t, next)
+    }
     def removeZeroSumSublists(head: ListNode): ListNode = {
-      def f(head: ListNode, acc: List[Int]): List[Int] = head match {
-        case null => acc.reverse
-        case _ => f(head.next, head.x :: acc)
-      }
+
       def solve(A: Array[Int]): Array[Int] = {
-        if (A.length == 0) return A
+        var rmd = List.empty[Int]
+        val idx = scala.collection.mutable.HashMap[Int, Int]()
+        if(A.length == 0) return A
         val cum = Array.fill(A.length)(0)
         cum(0) = A(0)
-        for {i <- cum.indices.tail}
-          cum(i) = cum(i - 1) + A(i)
+        if(cum(0) == 0) rmd ::= 0 else idx.put(cum(0), 0)
+        cum.indices.tail foreach { i =>
+          cum(i) = cum(i-1) +A(i)
+          if(cum(i) == 0) rmd = (0 to i).toList
+          else if(idx.contains(cum(i)) && !rmd.contains(idx(cum(i))))
+            rmd = rmd ++ (idx(cum(i))+1 to i).toList
+          else idx.put(cum(i), i)
 
-        cum.indices foreach { i => if (cum(i) == 0) return solve(A.slice(i + 1, A.length)) }
-
-        for {
-          i <- cum.indices
-          j <- i + 1 until cum.length
-          if cum(j) - cum(i) == 0
-        } return solve(A.slice(0, i + 1) ++ A.slice(j + 1, A.length))
-
-        A
+        }
+        A.indices.toArray filterNot rmd.contains map A
       }
 
-      def construct(l: List[Int], head: ListNode): Unit = l match {
-        case Nil => {}
-        case h :: t =>
-          val next = ListNode(h)
-          head.next = next
-          construct(t, head.next)
-      }
-      val A = solve(f(head, Nil).toArray)
-      if (A.isEmpty) null
-      else {
-        val head = ListNode(A.head)
-        construct(A.tail.toList, head)
-        head
-      }
-
+      l2ln(new ListNode(0))(solve(ln2l(head, Nil).toArray).toList, null)
     }
   }
   object P4 {
