@@ -45,7 +45,6 @@ object C153 {
 
   def main(args: Array[String]): Unit = {
     val ts = TreeSet.empty[Int]
-    ts.
     val A = Array(1,4,5,6,3,2,0)
     A.foreach(x => ts.add(x))
     println(ts)
