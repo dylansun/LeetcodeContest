@@ -14,14 +14,8 @@ object C157 {
   object P2 {
     def longestSubsequence(A: Array[Int], d: Int): Int = {
       val fre = scala.collection.mutable.HashMap[Int, Int]()
-      A foreach {x =>
-        fre.put(x, (fre.getOrElse(x-d, 0) + 1) max fre.getOrElse(x, 0))
-      }
-      var m = 0
-      for{
-        (k, v) <- fre
-      } if(v > m) m = v
-      m
+      A foreach {x => fre.put(x, (fre.getOrElse(x-d, 0) + 1) max fre.getOrElse(x, 0))}
+      fre.values.max
     }
   }
   object P3 {
@@ -38,8 +32,7 @@ object C157 {
       }
       def get(pos:Pos):Int = grid(pos.x)(pos.y)
       def dfs(l:List[Pos], gain:Int):Unit = l match {
-        case h::t =>
-          if(get(h) != 0){
+        case h::t => if(get(h) != 0){
             val new_gain = gain + get(h)
             max_gain = max_gain max new_gain
             dir.map(x => x + h) filter inBound filterNot t.contains foreach {hh => dfs(hh::h::t, new_gain)}
