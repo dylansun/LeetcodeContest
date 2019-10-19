@@ -48,7 +48,7 @@ object C158 {
     /*
         TODO: solve this problem in dp
      */
-    
+
   }
   object P4 {
     case class Elem(n:Int, times:Int)
