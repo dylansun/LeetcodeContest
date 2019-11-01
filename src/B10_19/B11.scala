@@ -83,7 +83,6 @@ object B11 {
 
   object P4 {
     def maximizeSweetness(A: Array[Int], K: Int): Int = {
-      val exp = A.sum / (K+1)
       def find(l:Int, r:Int, acc:Int):Int = if(l>r) acc else {
         val mid = (l + r) / 2
         if(check(mid)) find(mid+1, r, mid)
