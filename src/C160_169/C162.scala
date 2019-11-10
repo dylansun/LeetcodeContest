@@ -1,5 +1,5 @@
 package C160_169
-
+import scala.language.postfixOps
 /**
   * Created by lilisun on 11/10/19.
   */
@@ -21,16 +21,12 @@ object C162 {
   }
 
   // TLE last case
-  // use c++ to pass 
+  // use c++ to pass
   object P2 {
     def reconstructMatrix(upper: Int, lower: Int, colsum: Array[Int]): List[List[Int]] = {
       val n = colsum.length
       val A = Array.ofDim[Int](n)
       val B = Array.ofDim[Int](n)
-      def show(): Unit = {
-        println(s"A:${A.toList}\n B:${B.toList}")
-      }
-
       def solve(i: Int, acc: List[Int], upper: Int, lower: Int): List[List[Int]] =
         if (i < n) colsum(i) match {
           case 2 => A(i) = 1; B(i) = 1; solve(i + 1, acc, upper - 1, lower - 1)
@@ -104,7 +100,6 @@ object C162 {
       Fre(A)
     }
     def maxScoreWords(words: Array[String], letters: Array[Char], score: Array[Int]): Int = {
-      val n = words.length
       val weights = words map {word => word map {ch => score(ch - 'a')} sum}
       val wf = words map w2f
       val lf = w2f(letters.mkString)
