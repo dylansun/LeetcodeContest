@@ -49,6 +49,39 @@ object C158 {
         TODO: solve this problem in dp
      */
 
+    /*
+        const int MOD = 1e9 + 7;
+        const int N = 5e3 + 10;
+        int dp[N][6][20];
+
+        class Solution {
+        public:
+            int n;
+            vector<int> a;
+            int solve(int pos, int last, int cnt) {
+                if (pos == n) return 1;
+                int& ret = dp[pos][last][cnt];
+                if (ret >= 0) return ret;
+                ret = 0;
+                for (int i = 0; i < 6; ++i) {
+                    if (last == i && cnt + 1 > a[i]) continue;
+                    ret = (ret + solve(pos + 1, i, last == i ? cnt + 1 : 1)) % MOD;
+                }
+                return ret;
+            }
+            int dieSimulator(int n, vector<int>& rollMax) {
+                memset(dp, 255, sizeof(dp));
+                this->a = rollMax;
+                this->n = n;
+                int ret = 0;
+                for (int i = 0; i < 6; ++i) {
+                    ret = (ret + solve(1, i, 1)) % MOD;
+                }
+                return ret;
+            }
+        };
+     */
+
   }
   object P4 {
     case class Elem(n:Int, times:Int)
