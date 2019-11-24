@@ -29,6 +29,14 @@ object B13 {
           else f(n, i - 1, acc + "0")
         }
       }
+
+    // 解法二: n+1的二进制 去掉第一位
+    //
+    def f(x:Int, acc:String):String = x match {
+      case 0 => acc.tail
+      case _ => f(x >>1 , (x & 1)+acc)
+    }
+    // def encode(n: Int): String = f(n+1,"")
     def encode(n: Int): String = n match {
       case 0 => ""
       case _ => f(n, 1)
