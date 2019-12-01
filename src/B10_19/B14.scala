@@ -3,25 +3,22 @@ package B10_19
 /**
   * Created by lilisun on 12/1/19.
   */
-object No14 {
+object B14 {
   object P1 {
     val zero = BigInt(0)
-    def toHexspeak(num: String): String = {
-      check(toHex(BigInt(num), ""))
-    }
-    def check(str:String):String = {
-      println(str)
-      if(str.exists(ch => ('2' to '9').contains(ch))) "ERROR" else str
-    }
-    def toHex(x:BigInt, acc:String):String= x match {
-      case a if a == zero => acc
-      case _ => toHex(x / 16, f((x % 16).toInt)+acc)
-    }
+    def toHexspeak(num: String): String = check(toHex(BigInt(num), ""))
+    def check(str:String):String =
+      if(str.exists(ch => ('2' to '9').contains(ch))) "ERROR"
+      else str
+    def toHex(x:BigInt, acc:String):String =
+      if(x == zero) acc
+      else toHex(x / 16, f((x % 16).toInt)+acc)
     def f(x:Int):String = x match {
       case 0 => "O"
       case 1 => "I"
       case _ =>
-        if(x < 10) x.toString else (x - 10 + 'A').toChar.toString
+        if(x < 10) x.toString
+        else (x - 10 + 'A').toChar.toString
     }
   }
 
