@@ -10,35 +10,25 @@ object C166 {
         if(n > 9) f(n / 10, (n % 10)::acc)
         else n::acc
       }
-
       val l = f(n, Nil)
       l.product - l.sum
     }
   }
 
   object P2 {
-    // 1 <- ...
-    // 2 <- ...
-    //
-    // [3,3,3,3] => {[0,1,2],}
-    type LL = List[List[Int]]
+    def equalPartition(k:Int, l:List[Int]):List[List[Int]] = {
+      (0 until (l.length / k))
+        .toList
+        .map{id => l.slice(id*k,(id+1)*k)}
+    }
     def groupThePeople(A: Array[Int]): List[List[Int]] = {
-      def g(size:Int, l:List[Int], acc:LL = Nil):LL= {
-        if(l.size >= size)
-          g(size, l.slice(size, l.length), l.slice(0,size) :: acc)
-        else if(l.isEmpty)
-          acc
-        else{
-          println(s"Error: $size, $l, $acc")
-          Nil
+      A
+        .zipWithIndex
+        .groupBy{case (x,y)=> x}
+        .toList
+        .flatMap { case (k,v) =>
+          equalPartition(k, v.map{case (a,b) => b}.toList)
         }
-      }
-      def f(l:List[(Int,Int)]):List[List[Int]] = g(l.head._1, l.map{case (size, x) => x})
-      var ans = List.empty[List[Int]]
-      A.zipWithIndex.groupBy{case (size, x) => size} foreach {
-        case (size,l) => ans = f(l.toList) ++ ans
-      }
-      ans
     }
   }
 
@@ -137,6 +127,5 @@ object C166 {
     P2.groupThePeople(groupSizes) foreach println
   }
   def main(args: Array[String]): Unit = {
-    test4()
   }
 }
