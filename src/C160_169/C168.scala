@@ -1,4 +1,4 @@
-object No168 {
+object C168 {
   object p1 {
     def findNumbers(nums: Array[Int]): Int = {
       nums.count(x => x.toString.length % 2 == 0)
@@ -35,7 +35,7 @@ object No168 {
       val table = scala.collection.mutable.HashMap[String, Int]()
       for{
         i <- 0 until s.length
-        j <- minSize
+        j = minSize
         if i+j-1 < s.length
         str = s.slice(i,i+j-1)
         if str.distinct.length <= maxLetters

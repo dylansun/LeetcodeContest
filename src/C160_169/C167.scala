@@ -1,4 +1,4 @@
-object No167 {
+object C167 {
   object p1 {
     def f(head:ListNode, acc:Int = 0):Int =
       if(head == null) acc else f(head.next, acc*2 + head.x)
