@@ -1,4 +1,4 @@
-object B169 {
+object C169 {
   object P1 {
     def f(n:Int):Array[Int] = (1 to n).toArray.flatMap{x => Array(x, -x)}
     def sumZero(n: Int): Array[Int] = n % 2 match {
