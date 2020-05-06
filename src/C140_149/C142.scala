@@ -4,7 +4,7 @@ package C140_149
   * Created by lilisun on 6/23/19.
   */
 object C142 {
-  object Solution {
+  object P1 {
     def sampleStats(A: Array[Int]): Array[Double] = {
       def min_A(A:Array[Int]):Int = {
         for(i <- A.indices if A(i) > 0) return i
@@ -40,8 +40,7 @@ object C142 {
       Array(min_A(A), max_A(A), mean_A(A), median_A(A), most_A(A))
     }
   }
-
-  object Solution2 {
+  object P2 {
     def carPooling(A: Array[Array[Int]], c: Int): Boolean = {
       def f(l:List[Array[Int]], acc:List[Array[Int]]):Boolean = l match {
         case Nil => true
@@ -53,9 +52,9 @@ object C142 {
       f(A.toList.sortBy{case Array( x, y, z) => y}, Nil)
     }
   }
-
+  
 
   def main(args: Array[String]): Unit = {
-    println(Solution2.carPooling(Array(Array(2,1,5), Array(3,5,7)), 3))
+    println(P2.carPooling(Array(Array(2,1,5), Array(3,5,7)), 3))
   }
 }

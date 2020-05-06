@@ -3,7 +3,7 @@ object Bisect {
   type AB = MAB[Int]
   def insort(ab:AB, x:Int):Unit = insort_right(ab, x)
   def insort_right(ab: AB, x: Int): Unit = ab.insert(bisect(ab, x), x)
-  def insort_left(ab:AB, x:Int):Unit = ab.insert(bisect_left(ab,x))
+  def insort_left(ab:AB, x:Int):Unit = ab.insert(bisect_left(ab,x), x)
   def bisect(ab:AB, x:Int):Int = bisect_right(ab, x)
   def bisect_right(ab: AB, x: Int): Int = bisect_right(ab, x, 0, ab.length)
   def bisect_left(ab:AB, x:Int):Int = bisect_left(ab, x, 0, ab.length)
