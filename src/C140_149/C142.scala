@@ -52,7 +52,7 @@ object C142 {
       f(A.toList.sortBy{case Array( x, y, z) => y}, Nil)
     }
   }
-  
+
 
   def main(args: Array[String]): Unit = {
     println(P2.carPooling(Array(Array(2,1,5), Array(3,5,7)), 3))

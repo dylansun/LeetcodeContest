@@ -19,11 +19,8 @@ object TypeDef {
     else cacher.cache(f, x-1) + x
   }
   def main(args: Array[String]): Unit = {
-    println("*"*100)
-    for{x <- 1 to 10} println(f(x))
-
-    println("*"*100)
-    println(cacher.mem)
+    val wf = new WordFilter(Array("pop"))
+    println("search result", wf.f("", "op"))
   }
 
 }
