@@ -1,4 +1,5 @@
 import scala.collection.mutable.{ArrayBuffer => MAB}
+// TODO: abstraction to class for any comparable type T
 object Bisect {
   type AB = MAB[Int]
   def insort(ab:AB, x:Int):Unit = insort_right(ab, x)

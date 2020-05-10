@@ -24,13 +24,26 @@ object C186 {
     mem.keySet.toList.sorted map mem reduce (_++_) toArray
   }
 
-
+  def constrainedSubsetSum(nums: Array[Int], k: Int): Int = {
+    val dp = Array.fill(nums.length)(Int.MinValue)
+    val ab = AB[Int]()
+    nums.indices foreach {i =>
+      dp(i) = nums(i)
+      if(ab.isEmpty)  Bisect.insort(ab, dp(i))
+      else{
+        dp(i) = dp(i) max dp(i) + ab.last
+        Bisect.insort(ab, dp(i))
+        if(ab.length > k) Bisect.remove(ab, dp(i-k))
+      }
+    }
+    dp.max
+  }
   def main(args: Array[String]): Unit = {
     val l = List(List(1,2,3), List(8), List(2,3,312,313))
     val ab = AB(10,12)
     ab.append(11)
     println(ab)
     println(findDiagonalOrder(l).toList)
-    l forall (_==Nil)
+
   }
 }
