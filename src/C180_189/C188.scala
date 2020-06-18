@@ -62,7 +62,7 @@ object C188 {
     SafeCal.sum(
       for{i <- 0 until row
           j <- 0 until col
-          if mat.subMatSum(i,j,row-1,col-1)
+          if mat.subMatSum(i,j,row-1,col-1) > 0
       } yield dp.last(i)(j))
   }
 }

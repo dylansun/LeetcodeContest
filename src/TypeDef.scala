@@ -15,6 +15,13 @@ object TypeDef {
 
   def main(args: Array[String]): Unit = {
 
+    val cf = new Cache[Int, Int]().func _
+    def f(x:Int):Int = {
+      println(s"called: f($x)")
+      if(x<=0) 0 else cf(f)(x-1) + x
+    }
+    for {x <- 50 to 1 by -1} println(x, cf(f)(x))
+
   }
 
 }
