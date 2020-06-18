@@ -37,7 +37,7 @@ object repReadMe {
       code_name = "C"+cid+".scala"
       report_name = "C" + cid + ".md"
       code_file = "src/"+dir_name + "/" + code_name
-      report_file = "report/"+dir_name+"/" + report_name
+      report_file = "contest_report/"+dir_name+"/" + report_name
     }{
       writer.println(s"|Weekly Contest $cid|[Scala](${code_file})|[Report]($report_file)|")
     }
@@ -52,7 +52,7 @@ object repReadMe {
       code_file = "src/"+dir_name + "/" + code_name
       report_file = "report/"+dir_name+"/" + code_name
     }{
-      writer.println(s"|Bi-Weekly Contest $cid|[Scala](${code_file})|[Report]($report_file)|")
+      writer.println(s"|Bi-Weekly Contest $cid|[Scala]($code_file)|[md]($report_file)|")
     }
 
     Source.fromFile("ReadMe_footer.md").getLines() foreach {
