@@ -39,7 +39,7 @@ object repReadMe {
       code_file = "src/"+dir_name + "/" + code_name
       report_file = "contest_report/"+dir_name+"/" + report_name
     }{
-      writer.println(s"|第 $cid 场周赛|[Scala](${code_file})|[Report]($report_file)|")
+      writer.println(s"|第 $cid 场周赛|[Scala](${code_file})|[md]($report_file)|")
     }
 
     for{
