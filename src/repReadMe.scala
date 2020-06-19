@@ -30,7 +30,7 @@ object repReadMe {
     for(t <- c_text) writer.println(t)
 
     for{
-      cid <- 193 to 1 by -1
+      cid <- 193 to 83 by -1
       start = if(cid < 10) 1 else cid / 10 * 10
       finish = if(cid < 10) 9 else start + 9
       dir_name = "C" + start + "_"+finish
