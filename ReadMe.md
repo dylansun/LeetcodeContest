@@ -2,6 +2,7 @@
 -------------------------------
 |  Title | code | report| 
 | :-----: | :--------: | :----------: |
+|第 194 场周赛|[Scala](src/C190_199/C194.scala)|[md](contest_report/C190_199/C194.md)|
 |第 193 场周赛|[Scala](src/C190_199/C193.scala)|[md](contest_report/C190_199/C193.md)|
 |第 192 场周赛|[Scala](src/C190_199/C192.scala)|[md](contest_report/C190_199/C192.md)|
 |第 191 场周赛|[Scala](src/C190_199/C191.scala)|[md](contest_report/C190_199/C191.md)|
