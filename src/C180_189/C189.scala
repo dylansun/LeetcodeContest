@@ -1,5 +1,5 @@
 import scala.collection.mutable
-import mutable.{HashMap => HM, Set => mset}
+import scala.collection.mutable.{HashMap => HM, Set => mset}
 object C189 {
 
   object P1 {
