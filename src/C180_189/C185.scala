@@ -1,6 +1,7 @@
 import language.postfixOps
+import scala.collection.mutable.{HashMap => HM}
 object C185 {
-  import scala.collection.mutable.{HashMap => HM}
+
 
   def reformat(s: String): String = {
     def zigzag(s1:String, s2:String):String=
