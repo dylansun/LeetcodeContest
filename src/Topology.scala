@@ -18,7 +18,7 @@ class Topology[T] {
   }
   def topology_sort(inDegrees:HM[T,Int], graph:Graph[T]):(List[List[T]], Boolean) = {
     val n = inDegrees.size
-    val npoints = 0
+    var npoints = 0
     var ret = List.empty[List[T]]
     var Q = (for{v <- inDegrees.keySet if inDegrees == 0} yield v).toSeq
     while(Q.nonEmpty){
