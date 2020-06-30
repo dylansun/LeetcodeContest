@@ -40,7 +40,7 @@ object C182 {
     }
 
   }
-  object Solution {
+  object P4 {
     def findGoodStrings(n: Int, s1: String, s2: String, evil: String): Int = {
       val ret = solve(n, s2, evil)-solve(n,s1,evil) + (if(s1.contains(evil)) 0 else 1)
       if(ret < 0) ret + 1e9.toInt + 7 else ret
