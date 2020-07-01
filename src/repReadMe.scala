@@ -20,12 +20,13 @@ object repReadMe {
   def testSubDir():Unit = {
     subDir(new File(".")) foreach println
   }
+  def fileExist(path:String):Boolean = new File(path).exists()
   def main(args: Array[String]): Unit = {
 
     val c_text = List( "#  Weekly Contests Solutions with Scala ",
       "-------------------------------",
-      "|  Title | code | report| ",
-      "| :-----: | :--------: | :----------: |")
+      "|  Title | scala | python3 |report| ",
+      "| :-----: | :--------: | :--------: | :----------: |")
     val writer = new PrintWriter(new File("README.md"))
     for(t <- c_text) writer.println(t)
 
@@ -36,10 +37,14 @@ object repReadMe {
       dir_name = "C" + start + "_"+finish
       code_name = "C"+cid+".scala"
       report_name = "C" + cid + ".md"
-      code_file = "src/"+dir_name + "/" + code_name
-      report_file = "contest_report/"+dir_name+"/" + report_name
+      scala_path = "src/"+dir_name + "/" + code_name
+      report_path = "contest_report/"+dir_name+"/" + report_name
+      py3_path = "src_python3/"+dir_name + "/" + code_name
     }{
-      writer.println(s"|第 $cid 场周赛|[Scala](${code_file})|[md]($report_file)|")
+      val scala_file = if(fileExist(scala_path)) "[Scala]"+ scala_path else ""
+      val md_file =  if(fileExist(report_path)) "[md]"+ report_path else ""
+      val py3_file = if(fileExist(py3_path)) "[py3]"+py3_path else ""
+      writer.println(s"|第 $cid 场周赛|${scala_file}|${py3_file}|${md_file}|")
     }
 
     for{
@@ -49,10 +54,14 @@ object repReadMe {
       dir_name = "B" + start + "_"+finish
       code_name = "B"+cid+".scala"
       report_name = "B" + cid + ".md"
-      code_file = "src/"+dir_name + "/" + code_name
-      report_file = "contest_report/"+dir_name+"/" + report_name
+      scala_path = "src/"+dir_name + "/" + code_name
+      report_path = "contest_report/"+dir_name+"/" + report_name
+      py3_path = "src_python3/"+dir_name + "/" + code_name
     }{
-      writer.println(s"|第 $cid 场双周赛|[Scala]($code_file)|[md]($report_file)|")
+      val scala_file = if(fileExist(scala_path)) "[Scala]"+ scala_path else ""
+      val md_file =  if(fileExist(report_path)) "[md]"+ report_path else ""
+      val py3_file = if(fileExist(py3_path)) "[py3]"+py3_path else ""
+      writer.println(s"|第 $cid 场双周赛|${scala_file}|${py3_file}|${md_file}|")
     }
 
     Source.fromFile("ReadMe_footer.md").getLines() foreach {

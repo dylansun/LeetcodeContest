@@ -1,3 +1,4 @@
+import scala.math
 object C177 {
   object P1 {
     case class Date(y:Int, m:Int, d:Int)
@@ -33,7 +34,7 @@ object C177 {
 
   object P3 {
     def f(x:Int):Array[Int] = {
-      val sq = Math.sqrt(x).toInt
+      val sq = math.sqrt(x).toInt
       val ans = for{i <- 1 to sq; if x % i == 0} yield Array(i, x / i)
       ans.sortBy{case Array(a, b) => Math.abs(a-b)}.head
     }
