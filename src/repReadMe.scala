@@ -45,6 +45,7 @@ object repReadMe {
       val scala_file = if(fileExist(scala_path)) "[Scala]("+ scala_path+")" else " "
       val md_file =  if(fileExist(report_path)) "[md]("+ report_path +")"else " "
       val py3_file = if(fileExist(py3_path)) "[py3]("+py3_path+")" else " "
+      if(scala_file != " " || md_file !=" "  || py3_file != " "  )
       writer.println(s"|第 $cid 场周赛|${scala_file}|${py3_file}|${md_file}|")
     }
 
@@ -62,6 +63,7 @@ object repReadMe {
       val scala_file = if(fileExist(scala_path)) "[Scala]("+ scala_path+")" else " "
       val md_file =  if(fileExist(report_path)) "[md]("+ report_path +")"else " "
       val py3_file = if(fileExist(py3_path)) "[py3]("+py3_path+")" else " "
+      if(scala_file != " " || md_file !=" "  || py3_file != " "  )
       writer.println(s"|第 $cid 场双周赛|${scala_file}|${py3_file}|${md_file}|")
     }
 
