@@ -22,7 +22,8 @@ object repReadMe {
   }
   def fileExist(path:String):Boolean = new File(path).exists()
   def main(args: Array[String]): Unit = {
-
+    val last_contest = 195
+    val last_bicoontest = 29
     val c_text = List( "#  Weekly Contests Solutions with Scala ",
       "-------------------------------",
       "|  Title | scala | python3 |report| ",
@@ -31,7 +32,7 @@ object repReadMe {
     for(t <- c_text) writer.println(t)
 
     for{
-      cid <- 194 to 83 by -1
+      cid <- last_contest to 83 by -1
       start = if(cid < 10) 1 else cid / 10 * 10
       finish = if(cid < 10) 9 else start + 9
       dir_name = "C" + start + "_"+finish
@@ -48,7 +49,7 @@ object repReadMe {
     }
 
     for{
-      cid <- 28 to 1 by -1
+      cid <- last_bicoontest to 1 by -1
       start = if(cid < 10) 1 else cid / 10 * 10
       finish = if(cid < 10) 9 else start + 9
       dir_name = "B" + start + "_"+finish
