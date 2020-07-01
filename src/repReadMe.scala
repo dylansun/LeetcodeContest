@@ -42,9 +42,9 @@ object repReadMe {
       report_path = "contest_report/"+dir_name+"/" + report_name
       py3_path = "src_python3/"+dir_name + "/" + code_name
     }{
-      val scala_file = if(fileExist(scala_path)) "[Scala]"+ scala_path else ""
-      val md_file =  if(fileExist(report_path)) "[md]"+ report_path else ""
-      val py3_file = if(fileExist(py3_path)) "[py3]"+py3_path else ""
+      val scala_file = if(fileExist(scala_path)) "[Scala]("+ scala_path+")" else " "
+      val md_file =  if(fileExist(report_path)) "[md]("+ report_path +")"else " "
+      val py3_file = if(fileExist(py3_path)) "[py3]("+py3_path+")" else " "
       writer.println(s"|第 $cid 场周赛|${scala_file}|${py3_file}|${md_file}|")
     }
 
@@ -59,9 +59,9 @@ object repReadMe {
       report_path = "contest_report/"+dir_name+"/" + report_name
       py3_path = "src_python3/"+dir_name + "/" + code_name
     }{
-      val scala_file = if(fileExist(scala_path)) "[Scala]"+ scala_path else ""
-      val md_file =  if(fileExist(report_path)) "[md]"+ report_path else ""
-      val py3_file = if(fileExist(py3_path)) "[py3]"+py3_path else ""
+      val scala_file = if(fileExist(scala_path)) "[Scala]("+ scala_path+")" else " "
+      val md_file =  if(fileExist(report_path)) "[md]("+ report_path +")"else " "
+      val py3_file = if(fileExist(py3_path)) "[py3]("+py3_path+")" else " "
       writer.println(s"|第 $cid 场双周赛|${scala_file}|${py3_file}|${md_file}|")
     }
 
