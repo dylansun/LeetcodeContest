@@ -1,6 +1,6 @@
-#  Weekly Contests Solutions with Scala 
+#  Weekly Contests Solutions 
 -------------------------------
-|  Title | scala | python3 |report| 
+|  Title | Scala | Python 3 |Report| 
 | :-----: | :--------: | :--------: | :----------: |
 |第 195 场周赛|[Scala](src/C190_199/C195.scala)| |[md](contest_report/C190_199/C195.md)|
 |第 194 场周赛|[Scala](src/C190_199/C194.scala)| |[md](contest_report/C190_199/C194.md)|
@@ -56,11 +56,16 @@
 |第 142 场周赛|[Scala](src/C140_149/C142.scala)| | |
 |第 141 场周赛|[Scala](src/C140_149/C141.scala)| | |
 |第 140 场周赛|[Scala](src/C140_149/C140.scala)| |[md](contest_report/C140_149/C140.md)|
-|第 139 场周赛|[Scala](src/C130_139/C139.scala)| |[md](contest_report/C130_139/C139.md)|
+|第 139 场周赛|[Scala](src/C130_139/C139.scala)|[py3](src_python3/C130_139/C139.py)|[md](contest_report/C130_139/C139.md)|
 |第 83 场周赛|[Scala](src/C80_89/C83.scala)| |[md](contest_report/C80_89/C83.md)|
-|第 29 场双周赛| | |[md](contest_report/B20_29/B29.md)|
-|第 28 场双周赛| | |[md](contest_report/B20_29/B28.md)|
-|第 27 场双周赛| | |[md](contest_report/B20_29/B27.md)|
+|第 29 场双周赛|[Scala](src/B20_29/B29.scala)| |[md](contest_report/B20_29/B29.md)|
+|第 28 场双周赛|[Scala](src/B20_29/B28.scala)| |[md](contest_report/B20_29/B28.md)|
+|第 27 场双周赛|[Scala](src/B20_29/B27.scala)| |[md](contest_report/B20_29/B27.md)|
+|第 26 场双周赛|[Scala](src/B20_29/B26.scala)| | |
+|第 25 场双周赛|[Scala](src/B20_29/B25.scala)| | |
+|第 22 场双周赛|[Scala](src/B20_29/B22.scala)| | |
+|第 21 场双周赛|[Scala](src/B20_29/B21.scala)| | |
+|第 20 场双周赛|[Scala](src/B20_29/B20.scala)| | |
 |第 19 场双周赛|[Scala](src/B10_19/B19.scala)| | |
 |第 18 场双周赛|[Scala](src/B10_19/B18.scala)| | |
 |第 17 场双周赛|[Scala](src/B10_19/B17.scala)| | |

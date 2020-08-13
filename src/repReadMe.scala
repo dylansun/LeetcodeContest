@@ -22,11 +22,11 @@ object repReadMe {
   }
   def fileExist(path:String):Boolean = new File(path).exists()
   def main(args: Array[String]): Unit = {
-    val last_contest = 195
+    val last_contest = 196
     val last_bicoontest = 29
-    val c_text = List( "#  Weekly Contests Solutions with Scala ",
+    val c_text = List( "#  Weekly Contests Solutions ",
       "-------------------------------",
-      "|  Title | scala | python3 |report| ",
+      "|  Title | Scala | Python 3 |Report| ",
       "| :-----: | :--------: | :--------: | :----------: |")
     val writer = new PrintWriter(new File("README.md"))
     for(t <- c_text) writer.println(t)
@@ -37,10 +37,11 @@ object repReadMe {
       finish = if(cid < 10) 9 else start + 9
       dir_name = "C" + start + "_"+finish
       code_name = "C"+cid+".scala"
+      py3_code_name= "C"+cid+".py"
       report_name = "C" + cid + ".md"
       scala_path = "src/"+dir_name + "/" + code_name
       report_path = "contest_report/"+dir_name+"/" + report_name
-      py3_path = "src_python3/"+dir_name + "/" + code_name
+      py3_path = "src_python3/"+dir_name + "/" + py3_code_name
     }{
       val scala_file = if(fileExist(scala_path)) "[Scala]("+ scala_path+")" else " "
       val md_file =  if(fileExist(report_path)) "[md]("+ report_path +")"else " "
@@ -55,14 +56,19 @@ object repReadMe {
       finish = if(cid < 10) 9 else start + 9
       dir_name = "B" + start + "_"+finish
       code_name = "B"+cid+".scala"
+      py3_code_name = "B"+cid+".py"
       report_name = "B" + cid + ".md"
       scala_path = "src/"+dir_name + "/" + code_name
       report_path = "contest_report/"+dir_name+"/" + report_name
-      py3_path = "src_python3/"+dir_name + "/" + code_name
+      py3_path = "src_python3/"+dir_name + "/" + py3_code_name
     }{
       val scala_file = if(fileExist(scala_path)) "[Scala]("+ scala_path+")" else " "
       val md_file =  if(fileExist(report_path)) "[md]("+ report_path +")"else " "
       val py3_file = if(fileExist(py3_path)) "[py3]("+py3_path+")" else " "
+      println(s"Process Bi-contest ${cid}")
+      println(s"Found scala src:${fileExist(scala_path)}")
+      println(s"Found py3 src:${fileExist(py3_path)}")
+      println(s"Found md src:${fileExist(report_path)}")
       if(scala_file != " " || md_file !=" "  || py3_file != " "  )
       writer.println(s"|第 $cid 场双周赛|${scala_file}|${py3_file}|${md_file}|")
     }
