@@ -15,7 +15,7 @@ object B26 {
       (for{
         q <- 2 to n
         p <- 1 until q
-        if Math.gcd(p,q) == 1
+        if advMath.gcd(p,q) == 1
       } yield p.toString + "/" + q.toString).toList
     }
   }

@@ -37,12 +37,10 @@ object B29 {
     }
   }
   def main(args: Array[String]): Unit = {
-
-=======
     def kthFactor(n: Int, k: Int): Int =
       (1 to n).toList.filter(x =>n % x==0).drop(k-1).headOption.getOrElse(-1)
   }
-  object P3 {
+  object P3_DP {
     def longestSubarray(nums: Array[Int], K: Int = 1): Int = {
       val dp = Array.fill(nums.length, K + 1)(0)
       def get(i: Int, k: Int): Int = if (i < 0 || k < 0) 0 else dp(i)(k)

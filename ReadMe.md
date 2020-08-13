@@ -1,149 +1,89 @@
-#  Weekly Contests Solutions with Scala 
+#  Weekly Contests Solutions 
 -------------------------------
-|  Title | code | report| 
-| :-----: | :--------: | :----------: |
-|第 195 场周赛|[Scala](src/C190_199/C195.scala)|[md](contest_report/C190_199/C195.md)|
-|第 194 场周赛|[Scala](src/C190_199/C194.scala)|[md](contest_report/C190_199/C194.md)|
-|第 193 场周赛|[Scala](src/C190_199/C193.scala)|[md](contest_report/C190_199/C193.md)|
-|第 192 场周赛|[Scala](src/C190_199/C192.scala)|[md](contest_report/C190_199/C192.md)|
-|第 191 场周赛|[Scala](src/C190_199/C191.scala)|[md](contest_report/C190_199/C191.md)|
-|第 190 场周赛|[Scala](src/C190_199/C190.scala)|[md](contest_report/C190_199/C190.md)|
-|第 189 场周赛|[Scala](src/C180_189/C189.scala)|[md](contest_report/C180_189/C189.md)|
-|第 188 场周赛|[Scala](src/C180_189/C188.scala)|[md](contest_report/C180_189/C188.md)|
-|第 187 场周赛|[Scala](src/C180_189/C187.scala)|[md](contest_report/C180_189/C187.md)|
-|第 186 场周赛|[Scala](src/C180_189/C186.scala)|[md](contest_report/C180_189/C186.md)|
-|第 185 场周赛|[Scala](src/C180_189/C185.scala)|[md](contest_report/C180_189/C185.md)|
-|第 184 场周赛|[Scala](src/C180_189/C184.scala)|[md](contest_report/C180_189/C184.md)|
-|第 183 场周赛|[Scala](src/C180_189/C183.scala)|[md](contest_report/C180_189/C183.md)|
-|第 182 场周赛|[Scala](src/C180_189/C182.scala)|[md](contest_report/C180_189/C182.md)|
-|第 181 场周赛|[Scala](src/C180_189/C181.scala)|[md](contest_report/C180_189/C181.md)|
-|第 180 场周赛|[Scala](src/C180_189/C180.scala)|[md](contest_report/C180_189/C180.md)|
-|第 179 场周赛|[Scala](src/C170_179/C179.scala)|[md](contest_report/C170_179/C179.md)|
-|第 178 场周赛|[Scala](src/C170_179/C178.scala)|[md](contest_report/C170_179/C178.md)|
-|第 177 场周赛|[Scala](src/C170_179/C177.scala)|[md](contest_report/C170_179/C177.md)|
-|第 176 场周赛|[Scala](src/C170_179/C176.scala)|[md](contest_report/C170_179/C176.md)|
-|第 175 场周赛|[Scala](src/C170_179/C175.scala)|[md](contest_report/C170_179/C175.md)|
-|第 174 场周赛|[Scala](src/C170_179/C174.scala)|[md](contest_report/C170_179/C174.md)|
-|第 173 场周赛|[Scala](src/C170_179/C173.scala)|[md](contest_report/C170_179/C173.md)|
-|第 172 场周赛|[Scala](src/C170_179/C172.scala)|[md](contest_report/C170_179/C172.md)|
-|第 171 场周赛|[Scala](src/C170_179/C171.scala)|[md](contest_report/C170_179/C171.md)|
-|第 170 场周赛|[Scala](src/C170_179/C170.scala)|[md](contest_report/C170_179/C170.md)|
-|第 169 场周赛|[Scala](src/C160_169/C169.scala)|[md](contest_report/C160_169/C169.md)|
-|第 168 场周赛|[Scala](src/C160_169/C168.scala)|[md](contest_report/C160_169/C168.md)|
-|第 167 场周赛|[Scala](src/C160_169/C167.scala)|[md](contest_report/C160_169/C167.md)|
-|第 166 场周赛|[Scala](src/C160_169/C166.scala)|[md](contest_report/C160_169/C166.md)|
-|第 165 场周赛|[Scala](src/C160_169/C165.scala)|[md](contest_report/C160_169/C165.md)|
-|第 164 场周赛|[Scala](src/C160_169/C164.scala)|[md](contest_report/C160_169/C164.md)|
-|第 163 场周赛|[Scala](src/C160_169/C163.scala)|[md](contest_report/C160_169/C163.md)|
-|第 162 场周赛|[Scala](src/C160_169/C162.scala)|[md](contest_report/C160_169/C162.md)|
-|第 161 场周赛|[Scala](src/C160_169/C161.scala)|[md](contest_report/C160_169/C161.md)|
-|第 160 场周赛|[Scala](src/C160_169/C160.scala)|[md](contest_report/C160_169/C160.md)|
-|第 159 场周赛|[Scala](src/C150_159/C159.scala)|[md](contest_report/C150_159/C159.md)|
-|第 158 场周赛|[Scala](src/C150_159/C158.scala)|[md](contest_report/C150_159/C158.md)|
-|第 157 场周赛|[Scala](src/C150_159/C157.scala)|[md](contest_report/C150_159/C157.md)|
-|第 156 场周赛|[Scala](src/C150_159/C156.scala)|[md](contest_report/C150_159/C156.md)|
-|第 155 场周赛|[Scala](src/C150_159/C155.scala)|[md](contest_report/C150_159/C155.md)|
-|第 154 场周赛|[Scala](src/C150_159/C154.scala)|[md](contest_report/C150_159/C154.md)|
-|第 153 场周赛|[Scala](src/C150_159/C153.scala)|[md](contest_report/C150_159/C153.md)|
-|第 152 场周赛|[Scala](src/C150_159/C152.scala)|[md](contest_report/C150_159/C152.md)|
-|第 151 场周赛|[Scala](src/C150_159/C151.scala)|[md](contest_report/C150_159/C151.md)|
-|第 150 场周赛|[Scala](src/C150_159/C150.scala)|[md](contest_report/C150_159/C150.md)|
-|第 149 场周赛|[Scala](src/C140_149/C149.scala)|[md](contest_report/C140_149/C149.md)|
-|第 148 场周赛|[Scala](src/C140_149/C148.scala)|[md](contest_report/C140_149/C148.md)|
-|第 147 场周赛|[Scala](src/C140_149/C147.scala)|[md](contest_report/C140_149/C147.md)|
-|第 146 场周赛|[Scala](src/C140_149/C146.scala)|[md](contest_report/C140_149/C146.md)|
-|第 145 场周赛|[Scala](src/C140_149/C145.scala)|[md](contest_report/C140_149/C145.md)|
-|第 144 场周赛|[Scala](src/C140_149/C144.scala)|[md](contest_report/C140_149/C144.md)|
-|第 143 场周赛|[Scala](src/C140_149/C143.scala)|[md](contest_report/C140_149/C143.md)|
-|第 142 场周赛|[Scala](src/C140_149/C142.scala)|[md](contest_report/C140_149/C142.md)|
-|第 141 场周赛|[Scala](src/C140_149/C141.scala)|[md](contest_report/C140_149/C141.md)|
-|第 140 场周赛|[Scala](src/C140_149/C140.scala)|[md](contest_report/C140_149/C140.md)|
-|第 139 场周赛|[Scala](src/C130_139/C139.scala)|[md](contest_report/C130_139/C139.md)|
-|第 138 场周赛|[Scala](src/C130_139/C138.scala)|[md](contest_report/C130_139/C138.md)|
-|第 137 场周赛|[Scala](src/C130_139/C137.scala)|[md](contest_report/C130_139/C137.md)|
-|第 136 场周赛|[Scala](src/C130_139/C136.scala)|[md](contest_report/C130_139/C136.md)|
-|第 135 场周赛|[Scala](src/C130_139/C135.scala)|[md](contest_report/C130_139/C135.md)|
-|第 134 场周赛|[Scala](src/C130_139/C134.scala)|[md](contest_report/C130_139/C134.md)|
-|第 133 场周赛|[Scala](src/C130_139/C133.scala)|[md](contest_report/C130_139/C133.md)|
-|第 132 场周赛|[Scala](src/C130_139/C132.scala)|[md](contest_report/C130_139/C132.md)|
-|第 131 场周赛|[Scala](src/C130_139/C131.scala)|[md](contest_report/C130_139/C131.md)|
-|第 130 场周赛|[Scala](src/C130_139/C130.scala)|[md](contest_report/C130_139/C130.md)|
-|第 129 场周赛|[Scala](src/C120_129/C129.scala)|[md](contest_report/C120_129/C129.md)|
-|第 128 场周赛|[Scala](src/C120_129/C128.scala)|[md](contest_report/C120_129/C128.md)|
-|第 127 场周赛|[Scala](src/C120_129/C127.scala)|[md](contest_report/C120_129/C127.md)|
-|第 126 场周赛|[Scala](src/C120_129/C126.scala)|[md](contest_report/C120_129/C126.md)|
-|第 125 场周赛|[Scala](src/C120_129/C125.scala)|[md](contest_report/C120_129/C125.md)|
-|第 124 场周赛|[Scala](src/C120_129/C124.scala)|[md](contest_report/C120_129/C124.md)|
-|第 123 场周赛|[Scala](src/C120_129/C123.scala)|[md](contest_report/C120_129/C123.md)|
-|第 122 场周赛|[Scala](src/C120_129/C122.scala)|[md](contest_report/C120_129/C122.md)|
-|第 121 场周赛|[Scala](src/C120_129/C121.scala)|[md](contest_report/C120_129/C121.md)|
-|第 120 场周赛|[Scala](src/C120_129/C120.scala)|[md](contest_report/C120_129/C120.md)|
-|第 119 场周赛|[Scala](src/C110_119/C119.scala)|[md](contest_report/C110_119/C119.md)|
-|第 118 场周赛|[Scala](src/C110_119/C118.scala)|[md](contest_report/C110_119/C118.md)|
-|第 117 场周赛|[Scala](src/C110_119/C117.scala)|[md](contest_report/C110_119/C117.md)|
-|第 116 场周赛|[Scala](src/C110_119/C116.scala)|[md](contest_report/C110_119/C116.md)|
-|第 115 场周赛|[Scala](src/C110_119/C115.scala)|[md](contest_report/C110_119/C115.md)|
-|第 114 场周赛|[Scala](src/C110_119/C114.scala)|[md](contest_report/C110_119/C114.md)|
-|第 113 场周赛|[Scala](src/C110_119/C113.scala)|[md](contest_report/C110_119/C113.md)|
-|第 112 场周赛|[Scala](src/C110_119/C112.scala)|[md](contest_report/C110_119/C112.md)|
-|第 111 场周赛|[Scala](src/C110_119/C111.scala)|[md](contest_report/C110_119/C111.md)|
-|第 110 场周赛|[Scala](src/C110_119/C110.scala)|[md](contest_report/C110_119/C110.md)|
-|第 109 场周赛|[Scala](src/C100_109/C109.scala)|[md](contest_report/C100_109/C109.md)|
-|第 108 场周赛|[Scala](src/C100_109/C108.scala)|[md](contest_report/C100_109/C108.md)|
-|第 107 场周赛|[Scala](src/C100_109/C107.scala)|[md](contest_report/C100_109/C107.md)|
-|第 106 场周赛|[Scala](src/C100_109/C106.scala)|[md](contest_report/C100_109/C106.md)|
-|第 105 场周赛|[Scala](src/C100_109/C105.scala)|[md](contest_report/C100_109/C105.md)|
-|第 104 场周赛|[Scala](src/C100_109/C104.scala)|[md](contest_report/C100_109/C104.md)|
-|第 103 场周赛|[Scala](src/C100_109/C103.scala)|[md](contest_report/C100_109/C103.md)|
-|第 102 场周赛|[Scala](src/C100_109/C102.scala)|[md](contest_report/C100_109/C102.md)|
-|第 101 场周赛|[Scala](src/C100_109/C101.scala)|[md](contest_report/C100_109/C101.md)|
-|第 100 场周赛|[Scala](src/C100_109/C100.scala)|[md](contest_report/C100_109/C100.md)|
-|第 99 场周赛|[Scala](src/C90_99/C99.scala)|[md](contest_report/C90_99/C99.md)|
-|第 98 场周赛|[Scala](src/C90_99/C98.scala)|[md](contest_report/C90_99/C98.md)|
-|第 97 场周赛|[Scala](src/C90_99/C97.scala)|[md](contest_report/C90_99/C97.md)|
-|第 96 场周赛|[Scala](src/C90_99/C96.scala)|[md](contest_report/C90_99/C96.md)|
-|第 95 场周赛|[Scala](src/C90_99/C95.scala)|[md](contest_report/C90_99/C95.md)|
-|第 94 场周赛|[Scala](src/C90_99/C94.scala)|[md](contest_report/C90_99/C94.md)|
-|第 93 场周赛|[Scala](src/C90_99/C93.scala)|[md](contest_report/C90_99/C93.md)|
-|第 92 场周赛|[Scala](src/C90_99/C92.scala)|[md](contest_report/C90_99/C92.md)|
-|第 91 场周赛|[Scala](src/C90_99/C91.scala)|[md](contest_report/C90_99/C91.md)|
-|第 90 场周赛|[Scala](src/C90_99/C90.scala)|[md](contest_report/C90_99/C90.md)|
-|第 89 场周赛|[Scala](src/C80_89/C89.scala)|[md](contest_report/C80_89/C89.md)|
-|第 88 场周赛|[Scala](src/C80_89/C88.scala)|[md](contest_report/C80_89/C88.md)|
-|第 87 场周赛|[Scala](src/C80_89/C87.scala)|[md](contest_report/C80_89/C87.md)|
-|第 86 场周赛|[Scala](src/C80_89/C86.scala)|[md](contest_report/C80_89/C86.md)|
-|第 85 场周赛|[Scala](src/C80_89/C85.scala)|[md](contest_report/C80_89/C85.md)|
-|第 84 场周赛|[Scala](src/C80_89/C84.scala)|[md](contest_report/C80_89/C84.md)|
-|第 83 场周赛|[Scala](src/C80_89/C83.scala)|[md](contest_report/C80_89/C83.md)|
-|第 29 场双周赛|[Scala](src/B20_29/B29.scala)|[md](contest_report/B20_29/B29.md)|
-|第 28 场双周赛|[Scala](src/B20_29/B28.scala)|[md](contest_report/B20_29/B28.md)|
-|第 27 场双周赛|[Scala](src/B20_29/B27.scala)|[md](contest_report/B20_29/B27.md)|
-|第 26 场双周赛|[Scala](src/B20_29/B26.scala)|[md](contest_report/B20_29/B26.md)|
-|第 25 场双周赛|[Scala](src/B20_29/B25.scala)|[md](contest_report/B20_29/B25.md)|
-|第 24 场双周赛|[Scala](src/B20_29/B24.scala)|[md](contest_report/B20_29/B24.md)|
-|第 23 场双周赛|[Scala](src/B20_29/B23.scala)|[md](contest_report/B20_29/B23.md)|
-|第 22 场双周赛|[Scala](src/B20_29/B22.scala)|[md](contest_report/B20_29/B22.md)|
-|第 21 场双周赛|[Scala](src/B20_29/B21.scala)|[md](contest_report/B20_29/B21.md)|
-|第 20 场双周赛|[Scala](src/B20_29/B20.scala)|[md](contest_report/B20_29/B20.md)|
-|第 19 场双周赛|[Scala](src/B10_19/B19.scala)|[md](contest_report/B10_19/B19.md)|
-|第 18 场双周赛|[Scala](src/B10_19/B18.scala)|[md](contest_report/B10_19/B18.md)|
-|第 17 场双周赛|[Scala](src/B10_19/B17.scala)|[md](contest_report/B10_19/B17.md)|
-|第 16 场双周赛|[Scala](src/B10_19/B16.scala)|[md](contest_report/B10_19/B16.md)|
-|第 15 场双周赛|[Scala](src/B10_19/B15.scala)|[md](contest_report/B10_19/B15.md)|
-|第 14 场双周赛|[Scala](src/B10_19/B14.scala)|[md](contest_report/B10_19/B14.md)|
-|第 13 场双周赛|[Scala](src/B10_19/B13.scala)|[md](contest_report/B10_19/B13.md)|
-|第 12 场双周赛|[Scala](src/B10_19/B12.scala)|[md](contest_report/B10_19/B12.md)|
-|第 11 场双周赛|[Scala](src/B10_19/B11.scala)|[md](contest_report/B10_19/B11.md)|
-|第 10 场双周赛|[Scala](src/B10_19/B10.scala)|[md](contest_report/B10_19/B10.md)|
-|第 9 场双周赛|[Scala](src/B1_9/B9.scala)|[md](contest_report/B1_9/B9.md)|
-|第 8 场双周赛|[Scala](src/B1_9/B8.scala)|[md](contest_report/B1_9/B8.md)|
-|第 7 场双周赛|[Scala](src/B1_9/B7.scala)|[md](contest_report/B1_9/B7.md)|
-|第 6 场双周赛|[Scala](src/B1_9/B6.scala)|[md](contest_report/B1_9/B6.md)|
-|第 5 场双周赛|[Scala](src/B1_9/B5.scala)|[md](contest_report/B1_9/B5.md)|
-|第 4 场双周赛|[Scala](src/B1_9/B4.scala)|[md](contest_report/B1_9/B4.md)|
-|第 3 场双周赛|[Scala](src/B1_9/B3.scala)|[md](contest_report/B1_9/B3.md)|
-|第 2 场双周赛|[Scala](src/B1_9/B2.scala)|[md](contest_report/B1_9/B2.md)|
-|第 1 场双周赛|[Scala](src/B1_9/B1.scala)|[md](contest_report/B1_9/B1.md)|
+|  Title | Scala | Python 3 |Report| 
+| :-----: | :--------: | :--------: | :----------: |
+|第 195 场周赛|[Scala](src/C190_199/C195.scala)| |[md](contest_report/C190_199/C195.md)|
+|第 194 场周赛|[Scala](src/C190_199/C194.scala)| |[md](contest_report/C190_199/C194.md)|
+|第 193 场周赛|[Scala](src/C190_199/C193.scala)| |[md](contest_report/C190_199/C193.md)|
+|第 192 场周赛|[Scala](src/C190_199/C192.scala)| |[md](contest_report/C190_199/C192.md)|
+|第 191 场周赛|[Scala](src/C190_199/C191.scala)| |[md](contest_report/C190_199/C191.md)|
+|第 190 场周赛|[Scala](src/C190_199/C190.scala)| |[md](contest_report/C190_199/C190.md)|
+|第 189 场周赛|[Scala](src/C180_189/C189.scala)| |[md](contest_report/C180_189/C189.md)|
+|第 188 场周赛|[Scala](src/C180_189/C188.scala)| | |
+|第 187 场周赛|[Scala](src/C180_189/C187.scala)| | |
+|第 186 场周赛|[Scala](src/C180_189/C186.scala)| | |
+|第 185 场周赛|[Scala](src/C180_189/C185.scala)| |[md](contest_report/C180_189/C185.md)|
+|第 184 场周赛|[Scala](src/C180_189/C184.scala)| |[md](contest_report/C180_189/C184.md)|
+|第 183 场周赛|[Scala](src/C180_189/C183.scala)| |[md](contest_report/C180_189/C183.md)|
+|第 182 场周赛|[Scala](src/C180_189/C182.scala)| |[md](contest_report/C180_189/C182.md)|
+|第 181 场周赛|[Scala](src/C180_189/C181.scala)| | |
+|第 180 场周赛|[Scala](src/C180_189/C180.scala)| | |
+|第 179 场周赛|[Scala](src/C170_179/C179.scala)| |[md](contest_report/C170_179/C179.md)|
+|第 178 场周赛|[Scala](src/C170_179/C178.scala)| | |
+|第 177 场周赛|[Scala](src/C170_179/C177.scala)| | |
+|第 176 场周赛|[Scala](src/C170_179/C176.scala)| | |
+|第 175 场周赛|[Scala](src/C170_179/C175.scala)| | |
+|第 174 场周赛|[Scala](src/C170_179/C174.scala)| | |
+|第 173 场周赛|[Scala](src/C170_179/C173.scala)| | |
+|第 172 场周赛|[Scala](src/C170_179/C172.scala)| | |
+|第 171 场周赛|[Scala](src/C170_179/C171.scala)| | |
+|第 170 场周赛|[Scala](src/C170_179/C170.scala)| | |
+|第 169 场周赛|[Scala](src/C160_169/C169.scala)| | |
+|第 168 场周赛|[Scala](src/C160_169/C168.scala)| | |
+|第 167 场周赛|[Scala](src/C160_169/C167.scala)| | |
+|第 166 场周赛|[Scala](src/C160_169/C166.scala)| | |
+|第 165 场周赛|[Scala](src/C160_169/C165.scala)| | |
+|第 164 场周赛|[Scala](src/C160_169/C164.scala)| | |
+|第 163 场周赛|[Scala](src/C160_169/C163.scala)| | |
+|第 162 场周赛|[Scala](src/C160_169/C162.scala)| | |
+|第 161 场周赛|[Scala](src/C160_169/C161.scala)| | |
+|第 160 场周赛|[Scala](src/C160_169/C160.scala)| | |
+|第 159 场周赛|[Scala](src/C150_159/C159.scala)| | |
+|第 158 场周赛|[Scala](src/C150_159/C158.scala)| | |
+|第 157 场周赛|[Scala](src/C150_159/C157.scala)| | |
+|第 156 场周赛|[Scala](src/C150_159/C156.scala)| | |
+|第 154 场周赛|[Scala](src/C150_159/C154.scala)| | |
+|第 153 场周赛|[Scala](src/C150_159/C153.scala)| | |
+|第 152 场周赛|[Scala](src/C150_159/C152.scala)| | |
+|第 151 场周赛|[Scala](src/C150_159/C151.scala)| | |
+|第 150 场周赛|[Scala](src/C150_159/C150.scala)| | |
+|第 149 场周赛|[Scala](src/C140_149/C149.scala)| | |
+|第 148 场周赛|[Scala](src/C140_149/C148.scala)| | |
+|第 147 场周赛|[Scala](src/C140_149/C147.scala)| | |
+|第 146 场周赛|[Scala](src/C140_149/C146.scala)| | |
+|第 145 场周赛|[Scala](src/C140_149/C145.scala)| | |
+|第 143 场周赛|[Scala](src/C140_149/C143.scala)| | |
+|第 142 场周赛|[Scala](src/C140_149/C142.scala)| | |
+|第 141 场周赛|[Scala](src/C140_149/C141.scala)| | |
+|第 140 场周赛|[Scala](src/C140_149/C140.scala)| |[md](contest_report/C140_149/C140.md)|
+|第 139 场周赛|[Scala](src/C130_139/C139.scala)|[py3](src_python3/C130_139/C139.py)|[md](contest_report/C130_139/C139.md)|
+|第 83 场周赛|[Scala](src/C80_89/C83.scala)| |[md](contest_report/C80_89/C83.md)|
+|第 29 场双周赛|[Scala](src/B20_29/B29.scala)| |[md](contest_report/B20_29/B29.md)|
+|第 28 场双周赛|[Scala](src/B20_29/B28.scala)| |[md](contest_report/B20_29/B28.md)|
+|第 27 场双周赛|[Scala](src/B20_29/B27.scala)| |[md](contest_report/B20_29/B27.md)|
+|第 26 场双周赛|[Scala](src/B20_29/B26.scala)| | |
+|第 25 场双周赛|[Scala](src/B20_29/B25.scala)| | |
+|第 22 场双周赛|[Scala](src/B20_29/B22.scala)| | |
+|第 21 场双周赛|[Scala](src/B20_29/B21.scala)| | |
+|第 20 场双周赛|[Scala](src/B20_29/B20.scala)| | |
+|第 19 场双周赛|[Scala](src/B10_19/B19.scala)| | |
+|第 18 场双周赛|[Scala](src/B10_19/B18.scala)| | |
+|第 17 场双周赛|[Scala](src/B10_19/B17.scala)| | |
+|第 16 场双周赛|[Scala](src/B10_19/B16.scala)| | |
+|第 15 场双周赛|[Scala](src/B10_19/B15.scala)| | |
+|第 14 场双周赛|[Scala](src/B10_19/B14.scala)| | |
+|第 13 场双周赛|[Scala](src/B10_19/B13.scala)| | |
+|第 12 场双周赛|[Scala](src/B10_19/B12.scala)| | |
+|第 11 场双周赛|[Scala](src/B10_19/B11.scala)| | |
+|第 10 场双周赛|[Scala](src/B10_19/B10.scala)| | |
+|第 9 场双周赛|[Scala](src/B1_9/B9.scala)| | |
+|第 8 场双周赛|[Scala](src/B1_9/B8.scala)| | |
+|第 7 场双周赛|[Scala](src/B1_9/B7.scala)| | |
+|第 6 场双周赛|[Scala](src/B1_9/B6.scala)| | |
+|第 5 场双周赛|[Scala](src/B1_9/B5.scala)| | |
+|第 4 场双周赛|[Scala](src/B1_9/B4.scala)| | |
+|第 3 场双周赛|[Scala](src/B1_9/B3.scala)| | |
+|第 2 场双周赛|[Scala](src/B1_9/B2.scala)| | |
 #### 说明
 1. md文件只包含简单的解题思路
 2. 命名方式双周赛用B开头, 周赛用C开头
