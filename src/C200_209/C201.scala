@@ -46,7 +46,7 @@ object C201 {
     def longestAwesome(s: String): Int = {
       val dp = Array.fill( 1 << 10) ( s.length)
       dp(0) = -1
-      def sign(state:Int, j:Int):Int = if(state & (1 << j) == 0) 1 else -1
+      def sign(state:Int, j:Int):Int = if((state & (1 << j)) == 0) 1 else -1
       def solve(l:List[Int], i:Int, state:Int, acc:Int):Int = l match {
         case Nil => acc
         case h::t =>

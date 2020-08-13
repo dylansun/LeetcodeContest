@@ -2,7 +2,7 @@
 -------------------------------
 |  Title | Scala | Python 3 |Report| 
 | :-----: | :--------: | :--------: | :----------: |
-|第 201 场周赛| |[py3](src_python3/C200_209/C201.py)| |
+|第 201 场周赛|[Scala](src/C200_209/C201.scala)|[py3](src_python3/C200_209/C201.py)|[md](contest_report/C200_209/C201.md)|
 |第 200 场周赛| |[py3](src_python3/C200_209/C200.py)| |
 |第 199 场周赛| |[py3](src_python3/C190_199/C199.py)|[md](contest_report/C190_199/C199.md)|
 |第 198 场周赛| |[py3](src_python3/C190_199/C198.py)| |
