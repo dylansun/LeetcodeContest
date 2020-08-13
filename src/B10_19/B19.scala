@@ -28,7 +28,7 @@ object B19 {
     def angleClock(hour: Int, minutes: Int): Double = {
       // h => 30
       // m => 6
-      val d = Math.abs(hour * 30.0 + minutes * 0.5 - minutes * 6.0 )
+      val d = math.abs(hour * 30.0 + minutes * 0.5 - minutes * 6.0 )
       (360 - d) min d
     }
   }

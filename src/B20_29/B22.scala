@@ -4,7 +4,7 @@ object B22 {
 
   object P1 {
     def findTheDistanceValue(arr1: Array[Int], arr2: Array[Int], d: Int): Int = {
-      arr1 count {x => arr2 forall {y => Math.abs(x-y)>d}}
+      arr1 count {x => arr2 forall {y => math.abs(x-y)>d}}
     }
   }
 

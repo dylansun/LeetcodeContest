@@ -24,7 +24,7 @@ object B25 {
     for {i <- 0 until m; state <- (1 << n)-1 to 1 by -1}{
       dp(state) = SafeCal.add(dp(state), SafeCal.sum(for{
         k <- 0 until n
-        if advMath.hasBitK(state, k)
+        if EMath.hasBitK(state, k)
         if hats(k).contains(hatsID(i))
       } yield dp(state - (1 << k))))
     }

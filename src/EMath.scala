@@ -1,10 +1,12 @@
 /**
   * common math function used in contest
   */
-object advMath {
+object EMath {
   def gcd(x:Int, y:Int):Int= if(x % y == 0) y else gcd(y, x % y)
   def abs(x:Int):Int = math.abs(x)
   def abs(x:Double):Double = math.abs(x)
+  def abs(x:Long):Long = math.abs(x)
+  def abs(x:Float):Float = math.abs(x)
   def lcm(x:Int, y:Int):Int = x / gcd(x, y) * y
   def catalan(n:Int):Int = catalan(1, 1, n)
   def catalan(x:Int, i:Int, n:Int):Int =

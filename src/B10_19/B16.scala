@@ -21,7 +21,7 @@ object B16 {
         else search(l, mid-1, acc)
       }
       def calc( k:Int):Int = {
-        Math.abs(A.map {x => x min k}.sum - target)
+        math.abs(A.map {x => x min k}.sum - target)
       }
       def adjust(x:Int):Int = if(calc(x) <= calc(x+1)) x else x+1
       adjust(search(0, A.max))

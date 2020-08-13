@@ -2,6 +2,7 @@
 -------------------------------
 |  Title | Scala | Python 3 |Report| 
 | :-----: | :--------: | :--------: | :----------: |
+|第 196 场周赛| |[py3](src_python3/C190_199/C196.py)|[md](contest_report/C190_199/C196.md)|
 |第 195 场周赛|[Scala](src/C190_199/C195.scala)| |[md](contest_report/C190_199/C195.md)|
 |第 194 场周赛|[Scala](src/C190_199/C194.scala)| |[md](contest_report/C190_199/C194.md)|
 |第 193 场周赛|[Scala](src/C190_199/C193.scala)| |[md](contest_report/C190_199/C193.md)|
@@ -21,7 +22,7 @@
 |第 179 场周赛|[Scala](src/C170_179/C179.scala)| |[md](contest_report/C170_179/C179.md)|
 |第 178 场周赛|[Scala](src/C170_179/C178.scala)| | |
 |第 177 场周赛|[Scala](src/C170_179/C177.scala)| | |
-|第 176 场周赛|[Scala](src/C170_179/C176.scala)| | |
+|第 176 场周赛|[Scala](src/C170_179/C176.scala)| |[md](contest_report/C170_179/C176.md)|
 |第 175 场周赛|[Scala](src/C170_179/C175.scala)| | |
 |第 174 场周赛|[Scala](src/C170_179/C174.scala)| | |
 |第 173 场周赛|[Scala](src/C170_179/C173.scala)| | |

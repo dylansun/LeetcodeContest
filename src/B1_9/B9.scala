@@ -32,7 +32,7 @@ object B9 {
           ans
       }
 
-      f(Math.abs(x) min Math.abs(y), Math.abs(x) max Math.abs(y))
+      f(math.abs(x) min math.abs(y), math.abs(x) max math.abs(y))
     }
   }
 

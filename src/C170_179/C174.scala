@@ -38,7 +38,7 @@ object C174 {
         (if(root.left != null) root.left.value else 0) +
         (if(root.right != null) root.right.value else 0)
     }
-    def g(x:Int, base:Int):Int = Math.abs(base - 2*x)
+    def g(x:Int, base:Int):Int = math.abs(base - 2*x)
     def f(x:Int, y:Int, base:Int):Int = {
       if(g(x,base) >= g(y,base)) y else x
     }

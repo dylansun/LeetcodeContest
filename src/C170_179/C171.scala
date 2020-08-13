@@ -40,7 +40,7 @@ object C171 {
   object P4 {
     case class P(x:Int, y:Int){
       def -(that:P):P = P(x - that.x , y - that.y)
-      def distToOrigin():Int = Math.abs(x) + Math.abs(y)
+      def distToOrigin():Int = math.abs(x) + math.abs(y)
     }
     def pos(x:Int):P = P(x/6, x % 6)
     def minimumDistance(word: String): Int = {

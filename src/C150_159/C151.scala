@@ -4,7 +4,7 @@ object C151 {
       def inValid():Boolean = fee > 1000
       def inValid(that:Elem):Boolean = {
           this.name == that.name &&
-          Math.abs(this.time - that.time) <= 60 &&
+          math.abs(this.time - that.time) <= 60 &&
           this.city != that.city
       }
       def get():String = List(name, time.toString, fee.toString, city).mkString(",")

@@ -36,10 +36,10 @@ object C177 {
     def f(x:Int):Array[Int] = {
       val sq = math.sqrt(x).toInt
       val ans = for{i <- 1 to sq; if x % i == 0} yield Array(i, x / i)
-      ans.sortBy{case Array(a, b) => Math.abs(a-b)}.head
+      ans.sortBy{case Array(a, b) => math.abs(a-b)}.head
     }
     def closestDivisors(x: Int): Array[Int] = {
-      List(f(x+1), f(x+2)).sortBy{case Array(a, b) => Math.abs(a-b)}.head
+      List(f(x+1), f(x+2)).sortBy{case Array(a, b) => math.abs(a-b)}.head
     }
   }
 
