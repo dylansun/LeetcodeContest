@@ -2,6 +2,11 @@
 -------------------------------
 |  Title | Scala | Python 3 |Report| 
 | :-----: | :--------: | :--------: | :----------: |
+|第 201 场周赛| |[py3](src_python3/C200_209/C201.py)| |
+|第 200 场周赛| |[py3](src_python3/C200_209/C200.py)| |
+|第 199 场周赛| |[py3](src_python3/C190_199/C199.py)|[md](contest_report/C190_199/C199.md)|
+|第 198 场周赛| |[py3](src_python3/C190_199/C198.py)| |
+|第 197 场周赛| |[py3](src_python3/C190_199/C197.py)|[md](contest_report/C190_199/C197.md)|
 |第 196 场周赛| |[py3](src_python3/C190_199/C196.py)|[md](contest_report/C190_199/C196.md)|
 |第 195 场周赛|[Scala](src/C190_199/C195.scala)| |[md](contest_report/C190_199/C195.md)|
 |第 194 场周赛|[Scala](src/C190_199/C194.scala)| |[md](contest_report/C190_199/C194.md)|
@@ -59,6 +64,9 @@
 |第 140 场周赛|[Scala](src/C140_149/C140.scala)| |[md](contest_report/C140_149/C140.md)|
 |第 139 场周赛|[Scala](src/C130_139/C139.scala)|[py3](src_python3/C130_139/C139.py)|[md](contest_report/C130_139/C139.md)|
 |第 83 场周赛|[Scala](src/C80_89/C83.scala)| |[md](contest_report/C80_89/C83.md)|
+|第 32 场双周赛| |[py3](src_python3/B30_39/B32.py)| |
+|第 31 场双周赛| |[py3](src_python3/B30_39/B31.py)| |
+|第 30 场双周赛| |[py3](src_python3/B30_39/B30.py)| |
 |第 29 场双周赛|[Scala](src/B20_29/B29.scala)| |[md](contest_report/B20_29/B29.md)|
 |第 28 场双周赛|[Scala](src/B20_29/B28.scala)| |[md](contest_report/B20_29/B28.md)|
 |第 27 场双周赛|[Scala](src/B20_29/B27.scala)| |[md](contest_report/B20_29/B27.md)|

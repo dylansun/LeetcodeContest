@@ -22,8 +22,8 @@ object repReadMe {
   }
   def fileExist(path:String):Boolean = new File(path).exists()
   def main(args: Array[String]): Unit = {
-    val last_contest = 196
-    val last_bicoontest = 29
+    val last_contest = 201
+    val last_bicoontest = 32
     val c_text = List( "#  Weekly Contests Solutions ",
       "-------------------------------",
       "|  Title | Scala | Python 3 |Report| ",
