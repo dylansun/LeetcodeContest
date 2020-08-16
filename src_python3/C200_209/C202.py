@@ -10,13 +10,15 @@ class P1:
                 return True
         return False 
 class P2:
-    def minOperations(self, n: int) -> int:
+    def minOperations_2(self, n: int) -> int:
         m = (n & 1) ^ 1
         return (n - 1 + m) * ((n-1 - m)//2 + 1) // 2
     def minOperations(self, n: int) -> int:
         A = [2*i + 1 for i in range(n)]
         avg = sum(A) // len(A)
         return sum(abs(x - avg) for x in A) // 2
+    def minOperations_3(self, n: int) -> int:
+        return n**2 // 4
 class P3:
     def maxDistance(self, A:[int], m: int) -> int:
         A= sorted(A)
