@@ -1,6 +1,6 @@
-#  Weekly Contests Solutions 
+#  Weekly Contests Solutions
 -------------------------------
-|  Title | Scala | Python 3 |Report| 
+|  Title | Scala | Python 3 |Report|
 | :-----: | :--------: | :--------: | :----------: |
 |第 201 场周赛|[Scala](src/C200_209/C201.scala)|[py3](src_python3/C200_209/C201.py)|[md](contest_report/C200_209/C201.md)|
 |第 200 场周赛| |[py3](src_python3/C200_209/C200.py)| |
